@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="bs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pokretač — početni ekran za Android telefon</title>
+<meta name="description" content="Pokretač: besplatan početni ekran za Android — podesiva mreža, ladica s pretragom, geste jednim i s dva prsta, paketi ikona, widgeti, mape.">
+<link rel="icon" href="ikona.png">
+<style>
+  :root { --poz:#0C1214; --panel:#142024; --panel2:#1E2D31; --tekst:#E8F1EF; --sporedni:#8FA5A1; --smaragd:#2EC4A6; --zlatna:#F2B84B; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: "Segoe UI", Roboto, Arial, sans-serif; background: var(--poz); color: var(--tekst); line-height: 1.6; }
+  .omot { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  header { background: radial-gradient(circle at 25% 20%, #16524B 0%, var(--poz) 70%); padding: 44px 0 36px; }
+  .vrh { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .vrh img { width: 120px; height: 120px; border-radius: 28px; }
+  h1 { font-size: 44px; margin: 0; color: var(--smaragd); }
+  .podnaslov { font-size: 19px; margin: 4px 0 0; }
+  .autor { color: var(--sporedni); font-size: 14px; margin-top: 6px; }
+  .dugme { display: inline-block; background: var(--smaragd); color: #00201A; font-weight: 700; font-size: 20px;
+           padding: 16px 28px; border-radius: 14px; text-decoration: none; margin-top: 24px; }
+  .mala { color: var(--sporedni); font-size: 14px; margin-top: 10px; }
+  section { padding: 30px 0; border-top: 1px solid var(--panel2); }
+  h2 { color: var(--zlatna); font-size: 25px; margin: 0 0 14px; }
+  .mreza { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .kartica { background: var(--panel); border-radius: 16px; padding: 16px 18px; }
+  .kartica b { display: block; font-size: 17px; margin-bottom: 4px; }
+  .kartica span { color: var(--sporedni); font-size: 15px; }
+  ol { padding-left: 22px; margin: 8px 0 0; } li { margin: 6px 0; }
+  footer { color: var(--sporedni); font-size: 14px; padding: 26px 0 36px; border-top: 1px solid var(--panel2); }
+</style>
+</head>
+<body>
+<header>
+  <div class="omot">
+    <div class="vrh">
+      <img src="ikona.png" alt="Pokretač">
+      <div>
+        <h1>Pokretač</h1>
+        <p class="podnaslov">Početni ekran za Android telefon — uredite ga po svom.</p>
+        <p class="autor">O. H.</p>
+      </div>
+    </div>
+    <a class="dugme" href="https://github.com/omerhusovic-arch/pokretac/releases/latest/download/Pokretac.apk">⬇ Preuzmi Pokretač (Android)</a>
+    <p class="mala">Besplatno · bez reklama · Android 9 i noviji · <span id="verzija">zadnja verzija</span></p>
+  </div>
+</header>
+
+<main class="omot">
+  <section>
+    <h2>Šta Pokretač nudi</h2>
+    <div class="mreza">
+      <div class="kartica"><b>▦ Mreža po vašoj mjeri</b><span>3–7 kolona, 4–8 redova, veličina ikona, više stranica, dock na dnu.</span></div>
+      <div class="kartica"><b>🎲 Efekti listanja</b><span>Kocka, karte, uvećanje, lepeza, pretapanje…</span></div>
+      <div class="kartica"><b>☰ Ladica aplikacija</b><span>Abecedno, pretraga, kategorije i najčešće korištene na vrhu.</span></div>
+      <div class="kartica"><b>✋ Geste</b><span>Dvostruki dodir, jedan i dva prsta gore/dole — svaka gesta svoja radnja ili aplikacija.</span></div>
+      <div class="kartica"><b>🎨 Paketi ikona</b><span>Svi uobičajeni paketi ikona iz Play trgovine; ime i ikona za svaku aplikaciju posebno.</span></div>
+      <div class="kartica"><b>📁 Mape i widgeti</b><span>Mape u boji i obliku po izboru, widgeti koji se premještaju prstom.</span></div>
+      <div class="kartica"><b>🔴 Tačkice obavijesti</b><span>Vidite koja aplikacija ima novih obavijesti.</span></div>
+      <div class="kartica"><b>💾 Rezervna kopija</b><span>Cijeli raspored i postavke u jedan fajl — za novi telefon.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kako instalirati</h2>
+    <ol>
+      <li>Preuzmite <b>Pokretac.apk</b> i otvorite ga. Ako telefon pita, dozvolite instalaciju iz tog izvora.</li>
+      <li>Otvorite Pokretač → <b>Postavi kao zadani</b>.</li>
+      <li>Postavke → <b>Dozvole</b>: tu je sve, korak po korak (zaključavanje ekrana, tačkice obavijesti).</li>
+      <li>Na Androidu 13 i novijem: ako je prekidač siv, Podaci o aplikaciji → ⋮ → <b>Dozvoli ograničene postavke</b>.</li>
+    </ol>
+    <p class="mala">Nove verzije Pokretač sam ponudi (provjera jednom dnevno).</p>
+  </section>
+</main>
+
+<footer class="omot">Pokretač · O. H.</footer>
+<script>
+  fetch('verzija.json?t=' + Date.now()).then(r => r.json()).then(v => {
+    document.getElementById('verzija').textContent = 'verzija ' + v.versionName;
+  }).catch(() => {});
+</script>
+</body>
+</html>
