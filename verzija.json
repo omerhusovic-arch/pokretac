@@ -1,6 +1,6 @@
 {
-  "versionCode": 5,
-  "versionName": "1.4",
-  "apk": "https://github.com/omerhusovic-arch/pokretac/releases/download/v1.4/Pokretac.apk",
-  "novo": "Tačkice obavijesti na ikonama, rezervna kopija rasporeda, vlastito ime i ikona za svaku aplikaciju, boja i oblik mapa, kategorije i najčešće korištene u ladici, premještanje widgeta prstom i automatske nadogradnje."
+  "versionCode": 14,
+  "versionName": "2.3",
+  "apk": "https://github.com/omerhusovic-arch/pokretac/releases/download/v2.3/Pokretac.apk",
+  "novo": "Ikone u 3D lopti, točku, saću i spirali; 15 živih widgeta (polarna svjetlost, akvarij, gramofon, kalendar s krupnim brojevima…); vijesti udesno s prvog ekrana (prevucite naslov da ga sakrijete); privatna mapa sa šifrom; traka pretrage s kontaktima i glasom; isti oblik svih ikona; veličina widgeta prstom; popravljeni tamni naslovi u tamnoj temi."
 }

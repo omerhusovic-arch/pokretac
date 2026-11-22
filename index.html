@@ -3,23 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pokretač — početni ekran za Android telefon</title>
-<meta name="description" content="Pokretač: besplatan početni ekran za Android — podesiva mreža, ladica s pretragom, geste jednim i s dva prsta, paketi ikona, widgeti, mape.">
+<title>Pokretač — launcher (početni ekran) za Android telefon</title>
+<meta name="description" content="Pokretač je besplatan launcher (početni ekran) za Android: ikone u 3D lopti, točku i saću, živi widgeti, vijesti jednim potezom, kalendar s krupnim brojevima, geste, paketi ikona i privatna mapa sa šifrom.">
 <!-- seo:pocetak -->
 <link rel="canonical" href="https://omerhusovic-arch.github.io/pokretac/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="bs_BA">
 <meta property="og:site_name" content="Pokretač">
-<meta property="og:title" content="Pokretač — početni ekran za Android telefon">
-<meta property="og:description" content="Pokretač: besplatan početni ekran za Android — podesiva mreža, ladica s pretragom, geste jednim i s dva prsta, paketi ikona, widgeti, mape.">
+<meta property="og:title" content="Pokretač — launcher (početni ekran) za Android telefon">
+<meta property="og:description" content="Pokretač je besplatan launcher (početni ekran) za Android: ikone u 3D lopti, točku i saću, živi widgeti, vijesti jednim potezom, kalendar s krupnim brojevima, geste, paketi ikona i privatna mapa sa šifrom.">
 <meta property="og:url" content="https://omerhusovic-arch.github.io/pokretac/">
-<meta property="og:image" content="https://omerhusovic-arch.github.io/pokretac/reklama-1.png">
+<meta property="og:image" content="https://omerhusovic-arch.github.io/pokretac/reklama-lopta.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Pokretač">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://omerhusovic-arch.github.io/pokretac/reklama-1.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Pokretač", "url": "https://omerhusovic-arch.github.io/pokretac/", "description": "Pokretač: besplatan početni ekran za Android — podesiva mreža, ladica s pretragom, geste jednim i s dva prsta, paketi ikona, widgeti, mape.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Android", "inLanguage": "bs", "image": "https://omerhusovic-arch.github.io/pokretac/ikona.png", "screenshot": "https://omerhusovic-arch.github.io/pokretac/reklama-1.png", "downloadUrl": "https://github.com/omerhusovic-arch/pokretac/releases/latest/download/Pokretac.apk", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BAM"}}</script>
+<meta name="twitter:image" content="https://omerhusovic-arch.github.io/pokretac/reklama-lopta.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Pokretač", "url": "https://omerhusovic-arch.github.io/pokretac/", "description": "Pokretač je besplatan launcher (početni ekran) za Android: ikone u 3D lopti, točku i saću, živi widgeti, vijesti jednim potezom, kalendar s krupnim brojevima, geste, paketi ikona i privatna mapa sa šifrom.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Android", "inLanguage": "bs", "image": "https://omerhusovic-arch.github.io/pokretac/ikona.png", "screenshot": "https://omerhusovic-arch.github.io/pokretac/reklama-lopta.png", "downloadUrl": "https://github.com/omerhusovic-arch/pokretac/releases/latest/download/Pokretac.apk", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BAM"}}</script>
 <!-- seo:kraj -->
 <link rel="icon" href="ikona.png">
 <style>
@@ -43,6 +43,8 @@
   .kartica b { display: block; font-size: 17px; margin-bottom: 4px; }
   .kartica span { color: var(--sporedni); font-size: 15px; }
   ol { padding-left: 22px; margin: 8px 0 0; } li { margin: 6px 0; }
+  .galerija { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+  .galerija img { width: 100%; border-radius: 14px; display: block; }
   footer { color: var(--sporedni); font-size: 14px; padding: 26px 0 36px; border-top: 1px solid var(--panel2); }
 </style>
 </head>
@@ -53,7 +55,7 @@
       <img src="ikona.png" alt="Pokretač">
       <div>
         <h1>Pokretač</h1>
-        <p class="podnaslov">Početni ekran za Android telefon — uredite ga po svom.</p>
+        <p class="podnaslov">Launcher za Android — početni ekran telefona koji uredite po svom.</p>
         <p class="autor">O. H.</p>
       </div>
     </div>
@@ -63,6 +65,25 @@
 </header>
 
 <main class="omot">
+  <section>
+    <h2>Šta je launcher?</h2>
+    <p>Launcher (pokretač) je <b>početni ekran telefona</b> — ono što vidite kad pritisnete tipku Početna: ikone, widgeti,
+    ladica sa svim aplikacijama. Pokretač zamjenjuje Samsungov (ili bilo koji drugi) početni ekran; aplikacije i podaci
+    ostaju isti, mijenja se samo izgled i način rada. Stari ekran se vraća u Postavkama telefona jednim dodirom.</p>
+  </section>
+
+  <section>
+    <h2>Pogledajte</h2>
+    <div class="galerija">
+      <img src="galerija-1-lopta.jpg" alt="Aplikacije u 3D lopti" loading="lazy">
+      <img src="galerija-2-widgeti.jpg" alt="Živi widgeti" loading="lazy">
+      <img src="galerija-3-oblici.jpg" alt="Točak i saće" loading="lazy">
+      <img src="galerija-4-vijesti.jpg" alt="Vijesti jednim potezom" loading="lazy">
+      <img src="galerija-5-kalendar.jpg" alt="Kalendar s krupnim brojevima" loading="lazy">
+      <img src="galerija-6-spirala.jpg" alt="Spirala" loading="lazy">
+    </div>
+  </section>
+
   <section>
     <h2>Šta Pokretač nudi</h2>
     <div class="mreza">
@@ -74,6 +95,12 @@
       <div class="kartica"><b>📁 Mape i widgeti</b><span>Mape u boji i obliku po izboru, widgeti koji se premještaju prstom.</span></div>
       <div class="kartica"><b>🔴 Tačkice obavijesti</b><span>Vidite koja aplikacija ima novih obavijesti.</span></div>
       <div class="kartica"><b>💾 Rezervna kopija</b><span>Cijeli raspored i postavke u jedan fajl — za novi telefon.</span></div>
+      <div class="kartica"><b>🌐 Lopta, točak, saće, spirala</b><span>Mapa ili cijela ladica u neobičnom obliku koji se vrti prstom; ikone krupne koliko želite.</span></div>
+      <div class="kartica"><b>🌌 Živi widgeti</b><span>Polarna svjetlost, akvarij, flip sat, gramofon, sunce danas, vrijeme, baterija, Mjesec…</span></div>
+      <div class="kartica"><b>📰 Vijesti</b><span>Prevucite udesno s prvog ekrana: portali iz BiH i regije; prevucite naslov da ga sakrijete.</span></div>
+      <div class="kartica"><b>🗓️ Kalendar</b><span>Mjesec s krupnim brojevima (veličinu birate) i obaveze iz Google kalendara.</span></div>
+      <div class="kartica"><b>🔒 Privatna mapa</b><span>Mapa koja se otvara samo šifrom; njene aplikacije se mogu sakriti iz ladice.</span></div>
+      <div class="kartica"><b>🔍 Traka pretrage</b><span>Aplikacije, kontakti i internet iz jednog polja, i glasom.</span></div>
     </div>
   </section>
 
